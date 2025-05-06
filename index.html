@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #f5f5f5;
+            --text-color: #333;
+            --transition: all 0.3s ease;
+        }
+        .contact-item {
+            text-decoration: none;
+            color: inherit;
+        }
+        .contact-item:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-section">
+            <img src="image/2.jpg" alt="Profile Picture" class="profile-picture">
+            <div class="profile-info">
+                <h1>Mohanned Abduljalil Mohammed Alshamiri</h1>
+                <p>Major: Cyber Security</p>
+                <p>Date of Birth: 7/5/2004</p>
+                <p>Nationality: Male</p>
+            </div>
+        </div>
+
+        <section class="section">
+            <h2>About Me</h2>
+            <p>A fourth-year cybersecurity student at Azal University for Human Development,
+                 eager to gain practical experience in the field of cybersecurity.</p>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Azal University for Human Development</h3>
+                <p>Cyber Security</p>
+                <p>2025-2026</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Programming</div>
+                <div class="skill-item">Web Development</div>
+                <div class="skill-item">Problem Solving</div>
+                <div class="skill-item">Team Collaboration</div>
+                <div class="skill-item">Photoshop programs</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Certifications and Courses</h2>
+            <ul>
+                <li>English Language Diploma - Community Center for Translation & Language Teaching (Sana'a University)</li>
+                <li>Secretarial and Office Management Course - Sana'a University - T: Yassin Salam</li>
+                <li>Customer Service Course - Sana'a University - T: Yassin Salam</li>
+                <li>Human Resources Management Course - Sana'a University - T: Yassin Salam</li>
+                <li>High school - Al-Yaqza Educational School - Grade: Good</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <a href="mailto:mohanned.jalil@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span class="tooltip">mohanned.jalil@gmail.com</span>
+                </a>
+                <a href="tel:+967772433346" class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span class="tooltip">+967 772433346</span>
+                </a>
+                <span class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="tooltip">Yemen - Sana'a - 60th Street</span>
+                </span>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/mohanned.alshameri.2025?mibextid=ZbWKwL" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                    <span class="tooltip">Mohanned Alshamiri</span>
+                </a>
+                <a href="https://www.instagram.com/mo.j.a_?igsh=MXE2ejNxdDFsY2NwMA==" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    <span class="tooltip">mo.j.a_</span>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
