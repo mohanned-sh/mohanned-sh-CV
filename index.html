@@ -20,6 +20,54 @@
         .contact-item:hover {
             text-decoration: none;
         }
+        /* Responsive styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .profile-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .profile-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        .contact-info, .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .profile-section {
+                flex-direction: column;
+            }
+            .profile-info {
+                text-align: center;
+            }
+            .skills-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
+        }
     </style>
 </head>
 <body>
@@ -112,7 +160,3 @@
     </script>
 </body>
 </html>
-
-
-
-
